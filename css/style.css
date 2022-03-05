@@ -1,3 +1,132 @@
-body{
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@500&family=Raleway:wght@500;600;700&display=swap');
+
+/* Common Featuers */
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    
+}
+
+.highlighter{
+    color: #ff008e;
+}
+
+.primary-button{
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg, #ff008e, #c2076e);
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #550330;
+    position: relative;
+    top: 0;
+    /* this is also working without relative positioning, just use transfrom in active mode */
+
+}
+.primary-button:active {
+    top: 5px;
+    /* transform: translate(0, 5px); */
+    box-shadow: 0 3px 0 #550330;
+}
+
+/* Header */
+
+header{
+    /* height: 100vh; */
+    background-image: url(../images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background-blend-mode: overlay; */
+    background-blend-mode: overlay;
+    
+}
+
+/* Nav section */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center; 
+    
+    
+}
+
+
+.navigation {
+    display: flex;
+    
+}
+
+.navigation li{
+    list-style: none;
+    margin: 10px;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight:600;
+    padding: 15px 10px;
+} 
+/* Banner part */
+
+.banner{
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* height: calc(100vh - 80px); */
+}
+
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-left h1{
+    font-size: 45px;
+    color: white;
+}
+
+.banner-left p{
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.banner-right{
+    display: flex;
+    align-items: flex-end;
+
+    
+}
+
+.banner-right img{
+    width: 100%;
+    
+    
+
+}
+
