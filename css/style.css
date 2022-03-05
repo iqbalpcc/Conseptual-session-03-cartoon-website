@@ -46,6 +46,20 @@ body{
     box-shadow: 0 3px 0 #550330;
 }
 
+.section-title{
+    text-align: center;
+}
+
+.section-title h2{
+    font-size: 40px;
+    border-bottom: 2px solid #ff008e;
+    margin: 50px 0;
+    text-transform: uppercase;  
+    display:inline-block;  
+    
+}
+
+
 /* Header */
 
 header{
@@ -65,9 +79,7 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    align-items: center; 
-    
-    
+    align-items: center;    
 }
 
 
@@ -118,15 +130,53 @@ nav{
 
 .banner-right{
     display: flex;
-    align-items: flex-end;
-
-    
+    align-items: flex-end;    
 }
 
 .banner-right img{
     width: 100%;
-    
-    
 
+}
+/* Banner ends  */
+/* Feature Section */
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    /* justify-items: center; */
+    
+}
+.card{
+    
+    width: 400px;
+    padding: 30px;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.199);
+    margin: 0 auto;
+    
+} 
+
+.card .card-icon{
+    background-color: #ff008e;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    color: white;
+}
+
+.card h3{
+    color: #ff008e;
+    font-size: 25px;
+}
+
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.card a{
+    text-decoration: none;
+    color: #ff008e;
 }
 
