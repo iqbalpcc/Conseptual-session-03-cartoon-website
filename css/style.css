@@ -114,6 +114,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    
 }
 
 .banner-left h1{
@@ -179,4 +180,73 @@ nav{
     text-decoration: none;
     color: #ff008e;
 }
+
+/* Feature ends here */
+
+/* Gallery Starts here */
+
+.gallery{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    /* justify-items: center; */
+}
+
+.photo img{
+    width: 100%;
+    height: 200px;
+    /* padding: 5px; */
+    border: 3px solid #ff008e;
+    /* object-fit: cover; */
+    
+}
+/* Gallery ends here */
+
+/* Contacts part here  */
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.contact-left img{
+    width: 100%;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+.text-field{
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #ff008e;
+
+}
+
+/* Contacts ends here */
+
+/* footer */
+footer{
+    margin: 20px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #ff008e;
+}
+
 
